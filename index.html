@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <!-- Links Font Awesome CSS for using a wide range of icons -->
 
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+
+
   <!-- ====== Style Switcher ===== -->
   <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
   <!-- The first color scheme for the site (disabled by default for theme switching) -->
@@ -60,14 +64,17 @@
     <!-- ====== Aside End ===== -->
     <!-- ===== Main Content Start =====-->
     <main class="main-content">
+
       <!-- ===== Home Section Start ===== -->
-      <section class="home section " id="home">
+      <section class="home section" id="home">
         <div class="container">
           <div class="row">
+            <!-- Home Info -->
             <div class="home-info padd-15">
               <h3 class="hello">Hello, my name is <span class="name">Mark</span> Balidoy</h3>
               <h3 class="my-profession">I'm an <span class="typing">IT Student</span></h3>
-              <p>I am a Bachelor of Science in Information Technology (BSIT) undergraduate student at the University of
+              <p>
+                I am a Bachelor of Science in Information Technology (BSIT) undergraduate student at the University of
                 the Cordilleras,
                 specializing in Web and Mobile Applications. This website serves as a repository and showcase of my
                 academic projects,
@@ -77,16 +84,45 @@
                 towards a
                 career in the dynamic field of technology. Each project demonstrates my dedication to learning and my
                 ability to apply
-                theoretical concepts to practical solutions.</p>
+                theoretical concepts to practical solutions. I've coded this trial website from scratch through lots of
+                trial and errors,
+                creating many revisions in my HTML and CSS codes and some professional help in my JavaScript
+                style-switcher and
+                website functions for dark/light theme and interactable color themes.
+              </p>
               <a href="#contact" class="btn hire-me">Message Me</a>
+
             </div>
+
+            <!-- Home Image -->
             <div class="home-img padd-15">
-              <img src="images/Hero.jpg" alt="Hero image of Mark Balidoy">
+              <img src="images/profile.jpg" alt="Hero image of Mark Balidoy">
             </div>
+            <div class="portfolio-container">
+              <!-- Sample 1 -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <a href="images/sample-1.jpg" data-lightbox="project-gallery" data-title="Sample Project 1">
+                      <img src="images/sample-1.jpg" alt="Sample Project 1" class="project-preview-img">
+                    </a>
+                  </div>
+                  <p class="project-description">Sample Project 1 Password Validator System</p>
+                  <div class="project-actions">
+                    <a href="https://drive.google.com/file/d/1JrIiw-EajTNj98Dvu2lou--_kWSCVUMF/view?usp=sharing"
+                      download="SampleProject-1" class="btn-download">Download PDF</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
       <!-- ===== Home Section End ===== -->
+
+
       <!-- ===== About Section Start ===== -->
       <section class="about section " id="about">
         <div class="container">
@@ -186,9 +222,9 @@
                     <div class="skills-item">
                       <h5>SQL</h5>
                       <div class="progress-bar">
-                        <div class="progress-in" style="width: 15%;"></div>
+                        <div class="progress-in" style="width: 5%;"></div>
                       </div>
-                      <span class="skill-percent">15%</span>
+                      <span class="skill-percent">5%</span>
                     </div>
                   </div>
                 </div>
@@ -201,7 +237,7 @@
                       <!-- Education Timeline Items -->
                       <div class="timeline-item">
                         <div class="circle-dot"></div>
-                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2009 - 2013</h3>
+                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2009 - 2016</h3>
                         <h4 class="timeline-title">Primary School</h4>
                         <p class="timeline-text">
                           <span>Kinder to Grade 1-6: </span> Jose P. Laurel Elementary School, Upper Dagsian, Baguio
@@ -255,16 +291,6 @@
 
                       <div class="timeline-item">
                         <div class="circle-dot"></div>
-                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2027</h3>
-                        <h4 class="timeline-title">College (BSIT)</h4>
-                        <p class="timeline-text">
-                          <span>BSIT Web Tech Track:</span> University of the Cordilleras, Gov. Pack Road, Baguio City,
-                          Philippines
-                        </p>
-                      </div>
-
-                      <div class="timeline-item">
-                        <div class="circle-dot"></div>
                         <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
                         <h4 class="timeline-title">Builds Personal Computers for Peers/Colleagues</h4>
                         <p class="timeline-text">
@@ -279,11 +305,20 @@
                         <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
                         <h4 class="timeline-title">Part-Time in Restaurants</h4>
                         <p class="timeline-text">
-                          <span>Work at SM (McDonald's):</span> Hourly/daily wage, 6 months. Included 3 months of
-                          Customer Service
-                          Training.
+                          <span>Work at SM (McDonald's):</span> Hourly/daily wage, 4 months. Included 2 months of
+                          Live Customer Service Training.
                         </p>
                       </div>
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2027</h3>
+                        <h4 class="timeline-title">College (BSIT)</h4>
+                        <p class="timeline-text">
+                          <span>BSIT Web Tech Track:</span> University of the Cordilleras, Gov. Pack Road, Baguio City,
+                          Philippines
+                        </p>
+                      </div>
+
 
                     </div>
                   </div>
@@ -702,8 +737,8 @@
             <!-- ===== Contact Info Item Start ===== -->
             <div class="contact-info-item padd-15">
               <div class="icon"><i class="fa fa-globe-europe"></i></div>
-              <h4>Website</h4>
-              <p>https://sick-dawg-2003.github.io/WebsitePortfolioBalidoy</p>
+              <h4>Host Site</h4>
+              <p>Github</p>
             </div>
             <!-- ===== Contact Info Item End ===== -->
           </div>
